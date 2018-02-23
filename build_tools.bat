@@ -7,6 +7,9 @@ echo cls ^& git log --pretty=format:"%%%%h  %%%%s%%%%d" --graph> %GOPATH%\bin\lo
 echo git checkout %%*> %GOPATH%\bin\co.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
 
+echo go build %%*> %GOPATH%\bin\gb.bat
+echo go fmt ./...> %GOPATH%\bin\fmt.bat
+
 go get github.com/gonutz/x
 go get github.com/gonutz/zip
 go get github.com/gonutz/bin2go/v2/bin2go
