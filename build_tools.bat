@@ -8,6 +8,7 @@ echo git pull origin master> %GOPATH%\bin\pull.bat
 echo cls ^& git log --pretty=format:"%%%%h  %%%%s%%%%d" --graph> %GOPATH%\bin\log.bat
 echo git checkout %%*> %GOPATH%\bin\co.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
+echo git tag -a v%%* -m "version %%*"> %GOPATH%\bin\tagversion.bat
 
 echo go build %%*> %GOPATH%\bin\gb.bat
 echo go fmt ./...> %GOPATH%\bin\fmt.bat
