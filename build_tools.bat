@@ -2,6 +2,7 @@ echo cls ^& git status> %GOPATH%\bin\st.bat
 echo cls ^& git diff %%*> %GOPATH%\bin\df.bat
 echo cls ^& git diff --staged %%*> %GOPATH%\bin\sdf.bat
 echo git push origin master> %GOPATH%\bin\push.bat
+echo git push origin --tags> %GOPATH%\bin\pushtags.bat
 echo git pull origin master> %GOPATH%\bin\pull.bat
 echo cls ^& git log --pretty=format:"%%%%h  %%%%s%%%%d" --graph> %GOPATH%\bin\log.bat
 echo git checkout %%*> %GOPATH%\bin\co.bat
