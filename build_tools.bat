@@ -10,6 +10,7 @@ echo git checkout %%*> %GOPATH%\bin\co.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
 echo git tag -a v%%* -m "version %%*"> %GOPATH%\bin\tagversion.bat
 echo cls ^& git show %%*> %GOPATH%\bin\show.bat
+echo git show --stat --oneline %%*> %GOPATH%\bin\showfiles.bat
 
 echo go build %%*> %GOPATH%\bin\gb.bat
 echo go fmt ./...> %GOPATH%\bin\fmt.bat
