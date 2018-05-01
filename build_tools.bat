@@ -23,3 +23,11 @@ go get github.com/gonutz/bin2delphi
 go get github.com/gonutz/filever
 go get github.com/gonutz/gif2pngs
 go get github.com/gonutz/test2doc
+
+REM add a 'Command Line' context menu item to Explorer
+reg add "HKEY_CLASSES_ROOT\Directory\background\shell\Command Line"
+reg add "HKEY_CLASSES_ROOT\Directory\background\shell\Command Line\command" /d cmd.exe
+
+REM add a 'Run with cmd' for files in the Explorer context menu
+reg add "HKEY_CLASSES_ROOT\*\shell\Run with cmd"
+reg add "HKEY_CLASSES_ROOT\*\shell\Run with cmd\command" /d "cmd.exe /K ""%%1"""
