@@ -1,5 +1,6 @@
 echo cls ^& git status> %GOPATH%\bin\st.bat
 echo git commit> %GOPATH%\bin\cm.bat
+echo git commit -a> %GOPATH%\bin\cma.bat
 echo cls ^& git diff %%*> %GOPATH%\bin\df.bat
 echo cls ^& git diff --staged %%*> %GOPATH%\bin\sdf.bat
 echo git push origin master> %GOPATH%\bin\push.bat

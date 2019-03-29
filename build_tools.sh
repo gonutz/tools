@@ -1,5 +1,6 @@
 echo "alias st='clear; git status'">>~/.bashrc
 echo "alias cm='git commit'">>~/.bashrc
+echo "alias cma='git commit -a'">>~/.bashrc
 echo "alias df='clear; git diff'">>~/.bashrc
 echo "alias sdf='clear; git diff --staged'">>~/.bashrc
 echo "alias push='git push origin master'">>~/.bashrc
