@@ -13,13 +13,14 @@ echo "alias ad='git add'">>~/.bashrc
 echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc
 echo "alias show='git show'">>~/.bashrc
 echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
+
 echo "alias listdeps='go list -f {{.Deps}}'">>~/.bashrc
 echo "alias gb='go build'">>~/.bashrc
 echo "alias fmt='go fmt ./...'">>~/.bashrc
-echo "alias x='exit'">>~/.bashrc
 
+echo "alias x='exit'">>~/.bashrc
 go get github.com/gonutz/zip
 go get github.com/gonutz/bin2go/v2/bin2go
+go get github.com/gonutz/bin2delphi
 go get github.com/gonutz/gif2pngs
 go get github.com/gonutz/test2doc
-
