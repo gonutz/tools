@@ -12,9 +12,9 @@ pushall    git push --all origin
 pull       git pull origin master
 log        clear screen + git log
            formatted like this:
-			   * 2a2829a  Latest commit (HEAD -> master, origin/master, origin/HEAD)
-		       * 3f918ca  Short commit message
-		       * 3f918ca  Initial commit
+               * 2a2829a  Latest commit (HEAD -> master, origin/master, origin/HEAD)
+               * 3f918ca  Short commit message
+               * 3f918ca  Initial commit
 co         git checkout *
 ad         git add *
 tagversion git tag -a v%%* -m "version %%*"
