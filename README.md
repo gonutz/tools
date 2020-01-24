@@ -24,6 +24,7 @@ tagversion git tag -a v%%* -m "version %%*"
 show       clear screen + git show *
 showfiles  git show --stat --oneline *
            shows all the touched files of a specified commit (or the last one if you omit it)
+giturl     shows the URL of origin
 ```
 
 # Alias Commands for Go
