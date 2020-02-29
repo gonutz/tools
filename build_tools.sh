@@ -14,6 +14,7 @@ echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc
 echo "alias show='git show'">>~/.bashrc
 echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
 echo "alias giturl='git remote get-url origin'">>~/.bashrc
+echo "alias gitlist='git ls-tree -r master --name-only'">>~/.bashrc
 
 echo "alias listdeps='go list -f {{.Deps}}'">>~/.bashrc
 echo "alias gb='go build'">>~/.bashrc

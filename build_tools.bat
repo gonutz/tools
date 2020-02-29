@@ -14,6 +14,7 @@ echo git tag -a v%%* -m "version %%*"> %GOPATH%\bin\tagversion.bat
 echo cls ^& git show %%*> %GOPATH%\bin\show.bat
 echo git show --stat --oneline %%*> %GOPATH%\bin\showfiles.bat
 echo git remote get-url origin> %GOPATH%\bin\giturl.bat
+echo git ls-tree -r master --name-only> %GOPATH%\bin\gitlist.bat
 
 echo go list -f {{.Deps}} %%*> %GOPATH%\bin\listdeps.bat
 echo go build %%*> %GOPATH%\bin\gb.bat

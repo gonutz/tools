@@ -25,6 +25,7 @@ show       clear screen + git show *
 showfiles  git show --stat --oneline *
            shows all the touched files of a specified commit (or the last one if you omit it)
 giturl     shows the URL of origin
+gitlist    show all files currently under source control
 ```
 
 # Alias Commands for Go
