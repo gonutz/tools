@@ -4,6 +4,7 @@ echo git commit -a> %GOPATH%\bin\cma.bat
 echo cls ^& git diff %%*> %GOPATH%\bin\df.bat
 echo cls ^& git diff --staged %%*> %GOPATH%\bin\sdf.bat
 echo cls ^& git diff --stat %%*> %GOPATH%\bin\dfs.bat
+echo cls ^& git diff --stat --staged %%*> %GOPATH%\bin\sdfs.bat
 echo git push origin master> %GOPATH%\bin\push.bat
 echo git push origin --tags> %GOPATH%\bin\pushtags.bat
 echo git push --all origin> %GOPATH%\bin\pushall.bat

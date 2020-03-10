@@ -7,6 +7,7 @@ cma        git commit -a
 df         clear screen + git diff *
 sdf        clear screen + git diff --staged *
 dfs        clear screen + git diff --stat *
+sdfs       clear screen +  git diff --stat --staged *
 push       git push origin master
 pushtags   git push origin --tags
 pushall    git push --all origin

@@ -4,6 +4,7 @@ echo "alias cma='git commit -a'">>~/.bashrc
 echo "alias df='clear; git diff'">>~/.bashrc
 echo "alias sdf='clear; git diff --staged'">>~/.bashrc
 echo "alias dfs='clear; git diff --stat'">>~/.bashrc
+echo "alias sdfs='clear; git diff --stat --staged'">>~/.bashrc
 echo "alias push='git push origin master'">>~/.bashrc
 echo "alias pushtags='git push origin --tags'">>~/.bashrc
 echo "alias pushall='git push --all origin'">>~/.bashrc
