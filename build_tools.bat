@@ -19,7 +19,7 @@ echo git remote get-url origin> %GOPATH%\bin\giturl.bat
 echo git ls-tree -r master --name-only> %GOPATH%\bin\gitlist.bat
 copy cover.bat "%GOPATH%\bin\cover.bat"
 
-echo go list -f {{.Deps}} %%*> %GOPATH%\bin\listdeps.bat
+echo go list -f {{.Deps}} %%* ^| replace_all ^" ^" ^"^\n^"> %GOPATH%\bin\listdeps.bat
 echo go build %%*> %GOPATH%\bin\gb.bat
 echo go fmt ./...> %GOPATH%\bin\fmt.bat
 
@@ -30,6 +30,7 @@ go get github.com/gonutz/bin2delphi
 go get github.com/gonutz/filever
 go get github.com/gonutz/gif2pngs
 go get github.com/gonutz/test2doc
+go get github.com/gonutz/command_line_programs/...
 
 REM add a 'Command Line' context menu item to Explorer
 reg add "HKEY_CLASSES_ROOT\Directory\background\shell\Command Line"

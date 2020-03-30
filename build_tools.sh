@@ -18,7 +18,7 @@ echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
 echo "alias giturl='git remote get-url origin'">>~/.bashrc
 echo "alias gitlist='git ls-tree -r master --name-only'">>~/.bashrc
 
-echo "alias listdeps='go list -f {{.Deps}}'">>~/.bashrc
+echo "listdeps() { go list -f {{.Deps}} $1 | replace_all \" \" \"\\n\" }">>~/.bashrc
 echo "alias gb='go build'">>~/.bashrc
 echo "alias fmt='go fmt ./...'">>~/.bashrc
 
@@ -28,3 +28,4 @@ go get github.com/gonutz/bin2go/v2/bin2go
 go get github.com/gonutz/bin2delphi
 go get github.com/gonutz/gif2pngs
 go get github.com/gonutz/test2doc
+go get github.com/gonutz/command_line_programs/...
