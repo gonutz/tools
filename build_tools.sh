@@ -10,7 +10,7 @@ echo "alias push='git push origin master'">>~/.bashrc
 echo "alias pushtags='git push origin --tags'">>~/.bashrc
 echo "alias pushall='git push --all origin'">>~/.bashrc
 echo "alias pull='git pull origin master'">>~/.bashrc
-echo "alias log='clear; git log --pretty=format:\"%h  %s%d\" --graph'">>~/.bashrc
+echo "alias log='clear; git log --pretty=format:\"%h  %s%d (%an %cr)\" --graph'">>~/.bashrc
 echo "alias co='git checkout'">>~/.bashrc
 echo "alias ad='git add'">>~/.bashrc
 echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc
