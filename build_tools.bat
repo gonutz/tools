@@ -19,6 +19,7 @@ echo cls ^& git show %%*> %GOPATH%\bin\show.bat
 echo git show --stat --oneline %%*> %GOPATH%\bin\showfiles.bat
 echo git remote get-url origin> %GOPATH%\bin\giturl.bat
 echo git ls-tree -r master --name-only> %GOPATH%\bin\gitlist.bat
+echo @powershell -command "Get-Clipboard"> %GOPATH%\bin\paste.bat
 copy cover.bat "%GOPATH%\bin\cover.bat"
 copy clean.bat "%GOPATH%\bin\clean.bat"
 
