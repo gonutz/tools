@@ -1,8 +1,8 @@
 echo cls ^& git status> %GOPATH%\bin\st.bat
 echo git commit> %GOPATH%\bin\cm.bat
 echo git commit -a> %GOPATH%\bin\cma.bat
-echo cls ^& git diff %%*> %GOPATH%\bin\df.bat
-echo cls ^& git diff --staged %%*> %GOPATH%\bin\sdf.bat
+echo cls ^& git diff --color-moved=default %%*> %GOPATH%\bin\df.bat
+echo cls ^& git diff --color-moved=default --staged %%*> %GOPATH%\bin\sdf.bat
 echo cls ^& git difftool --staged %%*> %GOPATH%\bin\sdfd.bat
 echo cls ^& git diff --stat %%*> %GOPATH%\bin\dfs.bat
 echo cls ^& git difftool %%*> %GOPATH%\bin\dfd.bat

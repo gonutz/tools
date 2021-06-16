@@ -1,8 +1,8 @@
 echo "alias st='clear; git status'">>~/.bashrc
 echo "alias cm='git commit'">>~/.bashrc
 echo "alias cma='git commit -a'">>~/.bashrc
-echo "alias df='clear; git diff'">>~/.bashrc
-echo "alias sdf='clear; git diff --staged'">>~/.bashrc
+echo "alias df='clear; git diff --color-moved=default'">>~/.bashrc
+echo "alias sdf='clear; git diff --color-moved=default --staged'">>~/.bashrc
 echo "alias sdfd='clear; git difftool --staged'">>~/.bashrc
 echo "alias dfs='clear; git diff --stat'">>~/.bashrc
 echo "alias dfd='clear; git difftool'">>~/.bashrc
