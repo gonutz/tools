@@ -14,6 +14,7 @@ push       git push origin master
 pushtags   git push origin --tags
 pushall    git push --all origin
 pull       git pull origin master
+subs       git submodule update --init
 log        clear screen + git log
            formatted like this:
                * 2a2829a  Latest commit (HEAD -> master, origin/master, origin/HEAD)
@@ -21,6 +22,7 @@ log        clear screen + git log
                * 3f918ca  Initial commit
 co         git checkout *
 ad         git add *
+ada        git add -u *   (Add only tracked files)
 tagversion git tag -a v%%* -m "version %%*"
            the command tagversion 1.2.3 will be interpreter as
                git tag -a v1.2.3 -m "version 1.2.3"

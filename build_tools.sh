@@ -11,9 +11,11 @@ echo "alias push='git push origin master'">>~/.bashrc
 echo "alias pushtags='git push origin --tags'">>~/.bashrc
 echo "alias pushall='git push --all origin'">>~/.bashrc
 echo "alias pull='git pull origin master'">>~/.bashrc
+echo "alias subs='git submodule update --init'">>~/.bashrc
 echo "alias log='clear; git log --pretty=format:\"%h  %s%d (%an %cr)\" --graph'">>~/.bashrc
 echo "alias co='git checkout'">>~/.bashrc
 echo "alias ad='git add'">>~/.bashrc
+echo "alias ada='git add -u'">>~/.bashrc
 echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc
 echo "alias show='git show'">>~/.bashrc
 echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
