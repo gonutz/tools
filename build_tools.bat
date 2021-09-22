@@ -12,7 +12,7 @@ echo git push origin --tags> %GOPATH%\bin\pushtags.bat
 echo git push --all origin> %GOPATH%\bin\pushall.bat
 echo git pull origin master> %GOPATH%\bin\pull.bat
 echo git submodule update --init> %GOPATH%\bin\subs.bat
-echo cls ^& git log --pretty=format:"%%%%h  %%%%s%%%%d (%%%%an %%%%cr)" --graph> %GOPATH%\bin\log.bat
+echo cls ^& git log --graph --oneline --pretty=format:"%%%%C(Yellow)%%%%h%%%%Creset %%%%C(auto)%%%%d%%%%Creset %%%%s %%%%C(Green)(%%%%an, %%%%cr)%%%%Creset"> %GOPATH%\bin\log.bat
 echo git checkout %%*> %GOPATH%\bin\co.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
 echo git add -u %%*> %GOPATH%\bin\ada.bat
