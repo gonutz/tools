@@ -27,6 +27,7 @@ tagversion git tag -a v%%* -m "version %%*"
            the command tagversion 1.2.3 will be interpreter as
                git tag -a v1.2.3 -m "version 1.2.3"
            inserting a v before the tag name and generating the tag message "version x.y.z"
+amend      git commit --amend --no-edit
 show       clear screen + git show *
 showfiles  git show --stat --oneline *
            shows all the touched files of a specified commit (or the last one if you omit it)
