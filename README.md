@@ -27,6 +27,16 @@ tagversion git tag -a v%%* -m "version %%*"
            the command tagversion 1.2.3 will be interpreter as
                git tag -a v1.2.3 -m "version 1.2.3"
            inserting a v before the tag name and generating the tag message "version x.y.z"
+tags       git tag -l --sort=v:refname
+           shows all tags, sorted by version number, not alphabetically
+		   alphabet order results in:
+		       v1.1.0
+		       v1.10.0
+		       v1.2.0
+           while this command does what is expected:
+		       v1.1.0
+		       v1.2.0
+		       v1.10.0
 amend      git commit --amend --no-edit
 show       clear screen + git show *
 showfiles  git show --stat --oneline *

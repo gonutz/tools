@@ -17,6 +17,7 @@ echo git checkout %%*> %GOPATH%\bin\co.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
 echo git add -u %%*> %GOPATH%\bin\ada.bat
 echo git tag -a v%%* -m "version %%*"> %GOPATH%\bin\tagversion.bat
+echo git tag -l --sort=v:refname> %GOPATH%\bin\tags.bat
 echo git commit --amend --no-edit %%*> %GOPATH%\bin\amend.bat
 echo cls ^& git show %%*> %GOPATH%\bin\show.bat
 echo git show --stat --oneline %%*> %GOPATH%\bin\showfiles.bat

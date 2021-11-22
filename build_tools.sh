@@ -17,6 +17,7 @@ echo "alias co='git checkout'">>~/.bashrc
 echo "alias ad='git add'">>~/.bashrc
 echo "alias ada='git add -u'">>~/.bashrc
 echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc
+echo "alias tags='git tag -l --sort=v:refname'">>~/.bashrc
 echo "alias amend='git commit --amend --no-edit'">>~/.bashrc
 echo "alias show='git show'">>~/.bashrc
 echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
