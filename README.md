@@ -10,14 +10,15 @@ sdfd       clear screen + git difftool --staged *
 dfs        clear screen + git diff --stat *
 dfd        clear screen + git difftool *
 sdfs       clear screen +  git diff --stat --staged *
-push       git push origin master
+push       git push origin main
 pushtags   git push origin --tags
 pushall    git push --all origin
-pull       git pull origin master
+pull       git pull origin main
 subs       git submodule update --init
+clone      git clone --recurse-submodules *
 log        clear screen + git log
            formatted like this:
-               * 2a2829a  Latest commit (HEAD -> master, origin/master, origin/HEAD)
+               * 2a2829a  Latest commit (HEAD -> main, origin/main, origin/HEAD)
                * 3f918ca  Short commit message
                * 3f918ca  Initial commit
 co         git checkout *

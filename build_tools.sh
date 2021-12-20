@@ -12,6 +12,7 @@ echo "alias pushtags='git push origin --tags'">>~/.bashrc
 echo "alias pushall='git push --all origin'">>~/.bashrc
 echo "alias pull='git pull origin master'">>~/.bashrc
 echo "alias subs='git submodule update --init'">>~/.bashrc
+echo "alias clone='git clone --recurse-submodules'">>~/.bashrc
 echo "alias log='clear; git log --graph --oneline --pretty=format:\"%C(Yellow)%h%Creset %C(auto)%d%Creset %s %C(Green)(%an, %cr)%Creset\"'">>~/.bashrc
 echo "alias co='git checkout'">>~/.bashrc
 echo "alias ad='git add'">>~/.bashrc
