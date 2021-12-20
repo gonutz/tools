@@ -7,10 +7,10 @@ echo "alias sdfd='clear; git difftool --staged'">>~/.bashrc
 echo "alias dfs='clear; git diff --stat'">>~/.bashrc
 echo "alias dfd='clear; git difftool'">>~/.bashrc
 echo "alias sdfs='clear; git diff --stat --staged'">>~/.bashrc
-echo "alias push='git push origin master'">>~/.bashrc
+echo "alias push='git push origin main'">>~/.bashrc
 echo "alias pushtags='git push origin --tags'">>~/.bashrc
 echo "alias pushall='git push --all origin'">>~/.bashrc
-echo "alias pull='git pull origin master'">>~/.bashrc
+echo "alias pull='git pull origin main'">>~/.bashrc
 echo "alias subs='git submodule update --init'">>~/.bashrc
 echo "alias clone='git clone --recurse-submodules'">>~/.bashrc
 echo "alias log='clear; git log --graph --oneline --pretty=format:\"%C(Yellow)%h%Creset %C(auto)%d%Creset %s %C(Green)(%an, %cr)%Creset\"'">>~/.bashrc
@@ -23,7 +23,7 @@ echo "alias amend='git commit --amend --no-edit'">>~/.bashrc
 echo "alias show='git show'">>~/.bashrc
 echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
 echo "alias giturl='git remote get-url origin'">>~/.bashrc
-echo "alias gitlist='git ls-tree -r master --name-only'">>~/.bashrc
+echo "alias gitlist='git ls-tree -r main --name-only'">>~/.bashrc
 
 echo "listdeps() { go list -f {{.Deps}} $1 | replace_all \" \" \"\\n\" }">>~/.bashrc
 echo "alias gb='go build'">>~/.bashrc

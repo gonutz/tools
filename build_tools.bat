@@ -7,10 +7,10 @@ echo cls ^& git difftool --staged %%*> %GOPATH%\bin\sdfd.bat
 echo cls ^& git diff --stat %%*> %GOPATH%\bin\dfs.bat
 echo cls ^& git difftool %%*> %GOPATH%\bin\dfd.bat
 echo cls ^& git diff --stat --staged %%*> %GOPATH%\bin\sdfs.bat
-echo git push origin master> %GOPATH%\bin\push.bat
+echo git push origin main> %GOPATH%\bin\push.bat
 echo git push origin --tags> %GOPATH%\bin\pushtags.bat
 echo git push --all origin> %GOPATH%\bin\pushall.bat
-echo git pull origin master> %GOPATH%\bin\pull.bat
+echo git pull origin main> %GOPATH%\bin\pull.bat
 echo git submodule update --init> %GOPATH%\bin\subs.bat
 echo git clone --recurse-submodules %%*> %GOPATH%\bin\clone.bat
 echo cls ^& git log --graph --oneline --pretty=format:"%%%%C(Yellow)%%%%h%%%%Creset %%%%C(auto)%%%%d%%%%Creset %%%%s %%%%C(Green)(%%%%an, %%%%cr)%%%%Creset"> %GOPATH%\bin\log.bat
@@ -23,7 +23,7 @@ echo git commit --amend --no-edit %%*> %GOPATH%\bin\amend.bat
 echo cls ^& git show %%*> %GOPATH%\bin\show.bat
 echo git show --stat --oneline %%*> %GOPATH%\bin\showfiles.bat
 echo git remote get-url origin> %GOPATH%\bin\giturl.bat
-echo git ls-tree -r master --name-only> %GOPATH%\bin\gitlist.bat
+echo git ls-tree -r main --name-only> %GOPATH%\bin\gitlist.bat
 echo @powershell -command "Get-Clipboard"> %GOPATH%\bin\paste.bat
 copy cover.bat "%GOPATH%\bin\cover.bat"
 copy clean.bat "%GOPATH%\bin\clean.bat"
