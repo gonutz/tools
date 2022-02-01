@@ -30,7 +30,6 @@ echo "alias gb='go build'">>~/.bashrc
 echo "alias fmt='go fmt ./...'">>~/.bashrc
 
 echo "alias x='exit'">>~/.bashrc
-go get github.com/gonutz/zip
 go get github.com/gonutz/bin2go/v2/bin2go
 go get github.com/gonutz/bin2delphi
 go get github.com/gonutz/gif2pngs
