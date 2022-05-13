@@ -11,10 +11,11 @@ echo "alias push='git push origin main'">>~/.bashrc
 echo "alias pushtags='git push origin --tags'">>~/.bashrc
 echo "alias pushall='git push --all origin'">>~/.bashrc
 echo "alias pull='git pull origin main'">>~/.bashrc
-echo "alias subs='git submodule update --init'">>~/.bashrc
+echo "alias pulltags='git pull --tags'">>~/.bashrc
+echo "alias subs='git submodule update --init --recursive'">>~/.bashrc
 echo "alias clone='git clone --recurse-submodules'">>~/.bashrc
 echo "alias log='clear; git log --graph --oneline --pretty=format:\"%C(Yellow)%h%Creset %C(auto)%d%Creset %s %C(Green)(%an, %cr)%Creset\"'">>~/.bashrc
-echo "alias co='git checkout'">>~/.bashrc
+echo "alias co='git checkout --recurse-submodules'">>~/.bashrc
 echo "alias ad='git add'">>~/.bashrc
 echo "alias ada='git add -u'">>~/.bashrc
 echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc

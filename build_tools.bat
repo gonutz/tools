@@ -1,6 +1,6 @@
 echo cls ^& git status> %GOPATH%\bin\st.bat
-echo git commit> %GOPATH%\bin\cm.bat
-echo git commit -a> %GOPATH%\bin\cma.bat
+echo git commit %%*> %GOPATH%\bin\cm.bat
+echo git commit -a %%*> %GOPATH%\bin\cma.bat
 echo cls ^& git diff --color-moved=default %%*> %GOPATH%\bin\df.bat
 echo cls ^& git diff --color-moved=default --staged %%*> %GOPATH%\bin\sdf.bat
 echo cls ^& git difftool --staged %%*> %GOPATH%\bin\sdfd.bat
@@ -11,13 +11,14 @@ echo git push origin main> %GOPATH%\bin\push.bat
 echo git push origin --tags> %GOPATH%\bin\pushtags.bat
 echo git push --all origin> %GOPATH%\bin\pushall.bat
 echo git pull origin main> %GOPATH%\bin\pull.bat
-echo git submodule update --init> %GOPATH%\bin\subs.bat
+echo git pull --tags> %GOPATH%\bin\pulltags.bat
+echo git submodule update --init --recursive> %GOPATH%\bin\subs.bat
 echo git clone --recurse-submodules %%*> %GOPATH%\bin\clone.bat
 echo cls ^& git log --graph --oneline --pretty=format:"%%%%C(Yellow)%%%%h%%%%Creset %%%%C(auto)%%%%d%%%%Creset %%%%s %%%%C(Green)(%%%%an, %%%%cr)%%%%Creset"> %GOPATH%\bin\log.bat
-echo git checkout %%*> %GOPATH%\bin\co.bat
+echo git checkout --recurse-submodules %%*> %GOPATH%\bin\co.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
 echo git add -u %%*> %GOPATH%\bin\ada.bat
-echo git tag -a v%%* -m "version %%*"> %GOPATH%\bin\tagversion.bat
+echo git tag -a v%%* -m "version %%1"> %GOPATH%\bin\tagversion.bat
 echo git tag -l --sort=v:refname> %GOPATH%\bin\tags.bat
 echo git commit --amend --no-edit %%*> %GOPATH%\bin\amend.bat
 echo cls ^& git show %%*> %GOPATH%\bin\show.bat
