@@ -15,7 +15,8 @@ echo git pull --tags> %GOPATH%\bin\pulltags.bat
 echo git submodule update --init --recursive> %GOPATH%\bin\subs.bat
 echo git clone --recurse-submodules %%*> %GOPATH%\bin\clone.bat
 echo cls ^& git log --graph --oneline --pretty=format:"%%%%C(Yellow)%%%%h%%%%Creset %%%%C(auto)%%%%d%%%%Creset %%%%s %%%%C(Green)(%%%%an, %%%%cr)%%%%Creset"> %GOPATH%\bin\log.bat
-echo git checkout --recurse-submodules %%*> %GOPATH%\bin\co.bat
+echo git checkout %%*> %GOPATH%\bin\co.bat
+echo git checkout --recurse-submodules %%*> %GOPATH%\bin\cor.bat
 echo git add %%*> %GOPATH%\bin\ad.bat
 echo git add -u %%*> %GOPATH%\bin\ada.bat
 echo git tag -a v%%* -m "version %%1"> %GOPATH%\bin\tagversion.bat

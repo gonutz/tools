@@ -15,7 +15,8 @@ echo "alias pulltags='git pull --tags'">>~/.bashrc
 echo "alias subs='git submodule update --init --recursive'">>~/.bashrc
 echo "alias clone='git clone --recurse-submodules'">>~/.bashrc
 echo "alias log='clear; git log --graph --oneline --pretty=format:\"%C(Yellow)%h%Creset %C(auto)%d%Creset %s %C(Green)(%an, %cr)%Creset\"'">>~/.bashrc
-echo "alias co='git checkout --recurse-submodules'">>~/.bashrc
+echo "alias co='git checkout'">>~/.bashrc
+echo "alias cor='git checkout --recurse-submodules'">>~/.bashrc
 echo "alias ad='git add'">>~/.bashrc
 echo "alias ada='git add -u'">>~/.bashrc
 echo "tagversion() { git tag -a v\$1 -m \"version \$1\"; }">>~/.bashrc
