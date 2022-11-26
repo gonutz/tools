@@ -32,8 +32,10 @@ echo "alias gb='go build'">>~/.bashrc
 echo "alias fmt='go fmt ./...'">>~/.bashrc
 
 echo "alias x='exit'">>~/.bashrc
-go get github.com/gonutz/bin2go/v2/bin2go
-go get github.com/gonutz/bin2delphi
-go get github.com/gonutz/gif2pngs
-go get github.com/gonutz/test2doc
-go get github.com/gonutz/command_line_programs/...
+echo "alias q='exit'">>~/.bashrc
+go install github.com/gonutz/bin2go/v2/bin2go@latest
+go install github.com/gonutz/bin2delphi@latest
+go install github.com/gonutz/gif2pngs@latest
+go install github.com/gonutz/test2doc@latest
+go install github.com/gonutz/command_line_programs/...@latest
+go install github.com/gonutz/normalize@latest

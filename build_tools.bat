@@ -46,3 +46,4 @@ cmd /C go install github.com/gonutz/filever@latest
 cmd /C go install github.com/gonutz/gif2pngs@latest
 cmd /C go install github.com/gonutz/test2doc@latest
 cmd /C go install github.com/gonutz/command_line_programs/...@latest
+cmd /C go install github.com/gonutz/normalize@latest
