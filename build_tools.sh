@@ -26,6 +26,8 @@ echo "alias show='git show'">>~/.bashrc
 echo "alias showfiles='git show --stat --oneline'">>~/.bashrc
 echo "alias giturl='git remote get-url origin'">>~/.bashrc
 echo "alias gitlist='git ls-tree -r main --name-only'">>~/.bashrc
+echo "alias re='git reset'">>~/.bashrc
+echo "alias gp='git push'">>~/.bashrc
 
 echo "listdeps() { go list -f {{.Deps}} $1 | replace_all \" \" \"\\n\" }">>~/.bashrc
 echo "alias gb='go build'">>~/.bashrc

@@ -29,6 +29,9 @@ echo cls ^& git show %%*> %BIN%\show.bat
 echo git show --stat --oneline %%*> %BIN%\showfiles.bat
 echo git remote get-url origin> %BIN%\giturl.bat
 echo git ls-tree -r main --name-only> %BIN%\gitlist.bat
+echo git reset %%*> %BIN%\re.bat
+echo git push %%*> %BIN%\gp.bat
+
 echo go list -f {{.Deps}} %%* ^| replace_all ^" ^" ^"^\n^"> %BIN%\listdeps.bat
 echo go build %%*> %BIN%\gb.bat
 echo go fmt ./...> %BIN%\fmt.bat
