@@ -31,6 +31,7 @@ echo git remote get-url origin> %BIN%\giturl.bat
 echo git ls-tree -r main --name-only> %BIN%\gitlist.bat
 echo git reset %%*> %BIN%\re.bat
 echo git push %%*> %BIN%\gp.bat
+echo git init -b main %%*> %BIN%\init.bat
 
 echo go list -f {{.Deps}} %%* ^| replace_all ^" ^" ^"^\n^"> %BIN%\listdeps.bat
 echo go build %%*> %BIN%\gb.bat

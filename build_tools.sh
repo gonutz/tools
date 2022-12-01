@@ -28,6 +28,7 @@ echo "alias giturl='git remote get-url origin'">>~/.bashrc
 echo "alias gitlist='git ls-tree -r main --name-only'">>~/.bashrc
 echo "alias re='git reset'">>~/.bashrc
 echo "alias gp='git push'">>~/.bashrc
+echo "alias init='git init -b main'">>~/.bashrc
 
 echo "listdeps() { go list -f {{.Deps}} $1 | replace_all \" \" \"\\n\" }">>~/.bashrc
 echo "alias gb='go build'">>~/.bashrc
